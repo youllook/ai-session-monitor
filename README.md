@@ -23,7 +23,7 @@
 
 ## 安裝（每位同仁做一次）
 
-從 `dist/` 拿對應的檔案：
+從 [Releases](https://github.com/youllook/ai-session-monitor/releases/latest) 下載對應的檔案（自己編譯的話在 `dist/`）：
 
 | 電腦 | 檔案 |
 |---|---|
