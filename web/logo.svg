@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="AI 對話監看">
+  <style>
+    .bubble { fill: #176b68; }
+    .meter { fill: #fff; }
+    @media (prefers-color-scheme: dark) {
+      .bubble { fill: #77ddd3; }
+      .meter { fill: #102b2a; }
+    }
+  </style>
+  <path class="bubble" d="M6.5 4h19A4.5 4.5 0 0 1 30 8.5v11a4.5 4.5 0 0 1-4.5 4.5H17l-6.2 5v-5H6.5A4.5 4.5 0 0 1 2 19.5v-11A4.5 4.5 0 0 1 6.5 4Z"/>
+  <rect class="meter" x="7" y="14" width="4" height="5" rx="1"/>
+  <rect class="meter" x="14" y="10" width="4" height="9" rx="1"/>
+  <rect class="meter" x="21" y="7" width="4" height="12" rx="1"/>
+</svg>

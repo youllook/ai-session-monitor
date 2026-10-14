@@ -1,0 +1,8 @@
+# Go 編譯快取（開發時設在專案內）
+.gocache/
+.gotmp/
+# 本機建置產物；發佈檔放 GitHub Releases
+/aimon
+/aimon.exe
+/dist/
+*.exe.old
