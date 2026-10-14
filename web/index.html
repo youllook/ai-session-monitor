@@ -279,6 +279,9 @@ for (const tab of tipTabs) {
   tab.addEventListener('click',() => selectTip(tab.dataset.tip));
   tab.addEventListener('keydown',e => { if (!['ArrowLeft','ArrowRight','Home','End'].includes(e.key)) return; e.preventDefault(); const current=tipTabs.indexOf(tab), next=e.key === 'Home' ? 0 : e.key === 'End' ? tipTabs.length-1 : (current+(e.key === 'ArrowRight' ? 1 : -1)+tipTabs.length)%tipTabs.length; selectTip(tipTabs[next].dataset.tip,true); });
 }
+// 網址可直接開到指定分頁：#tips、#tips/models、#notes（分享連結、截圖用）
+function openFromHash() { const [tab,tip]=location.hash.slice(1).split('/'); if (!tab) return; selectTab(tab); if (tip) selectTip(tip); }
+window.addEventListener('hashchange',openFromHash); openFromHash();
 const notes=document.getElementById('notes'), saveState=document.getElementById('save-state');
 let saveTimer=0, saving=false, queuedNote=null;
 function setSaveState(text,kind='') { saveState.textContent=text; saveState.className='save-state'+(kind ? ' '+kind : ''); }

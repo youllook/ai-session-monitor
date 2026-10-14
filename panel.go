@@ -212,6 +212,10 @@ func (p *panel) rows() []row {
 
 // openWindow：用 Chrome／Edge 的 --app 開一個沒有網址列的小視窗；都找不到就用預設瀏覽器
 func openWindow(url string) {
+	if os.Getenv("AIMON_NO_WINDOW") == "1" {
+		fmt.Fprintln(os.Stderr, "面板：", url) // 開發、截圖時只開伺服器，不彈視窗
+		return
+	}
 	app := []string{"--app=" + url, "--window-size=520,640"}
 	switch runtime.GOOS {
 	case "windows":
