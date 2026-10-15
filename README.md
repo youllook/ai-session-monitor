@@ -156,3 +156,7 @@ done
 | `skill/SKILL.md` | 導覽 skill（編譯時嵌進程式） |
 
 Codex 掛勾點、rollout 格式與查證紀錄見 [CODEX.md](CODEX.md)。
+
+## 授權
+
+[MIT](LICENSE)：可自由使用、修改、散布（含商業用途），保留版權聲明即可。
